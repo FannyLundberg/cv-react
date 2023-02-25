@@ -1,6 +1,15 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export function Education() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <section className="educationSection">
+    <section className="educationSection" data-aos="fade-down">
       <h3>Utbildning</h3>
       <h4>Medieinstitutet (okt 2021 – jun 2023)</h4>
       <p>

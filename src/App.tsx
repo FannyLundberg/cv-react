@@ -1,4 +1,5 @@
 import "./App.css";
+import { Diverse } from "./components/Diverse";
 import { Education } from "./components/Education";
 import { Footer } from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
@@ -13,6 +14,7 @@ function App() {
         <TechStack />
         <Education />
         <Work />
+        <Diverse />
       </main>
       <Footer />
     </div>

@@ -1,6 +1,16 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export function Work() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <section className="workSection">
+    <section className="workSection" data-aos="fade-down">
       <h3>Arbetslivserfarenhet</h3>
       <h4>Sergel Kredittjänster (aug 2015 – nuvarande/tjänstledig)</h4>
       <p>
