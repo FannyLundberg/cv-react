@@ -1,3 +1,3 @@
 export function Footer() {
-  return <>Icons by Icons8</>;
+  return <><span>@Fanny Lundberg 2023</span> <span>Icons by Icons8</span></>;
 }

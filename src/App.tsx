@@ -1,7 +1,9 @@
 import "./App.css";
+import { Education } from "./components/Education";
 import { Footer } from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { TechStack } from "./components/TechStack";
+import { Work } from "./components/Work";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <HeroSection />
       <main>
         <TechStack />
+        <Education />
+        <Work />
       </main>
       <Footer />
     </div>
