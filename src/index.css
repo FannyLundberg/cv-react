@@ -75,6 +75,7 @@ main {
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
+  height: 65px;
 }
 
 .educationSection,
@@ -123,8 +124,114 @@ footer {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: rgb(203, 230, 199);
+  color: black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(203, 230, 199, 0.13);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(203, 230, 199);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(147, 168, 144);
+}
+
+/* Mobilanpassning */
+@media screen and (max-width: 768px) {
+  .heroSection {
+    background-position: left;
+  }
+
+  .profilImg {
+    width: 150px;
+    bottom: 35vh;
+    right: 25vw;
+  }
+
+  .nameTitleWrapper {
+    bottom: 25vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .techStackSection {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .educationSection,
+  .workSection,
+  .diverseSection {
+    margin: 0 auto;
+    width: 320px;
+    padding: 1.5%;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    color: rgb(203, 230, 199);
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .educationSection {
+    margin-left: 20%;
+  }
+  
+  .workSection {
+    margin-left: 5%;
+  }
+  
+  .diverseSection {
+    margin-left: 20%;
+  }
+
+  .techStackSection {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
 }
