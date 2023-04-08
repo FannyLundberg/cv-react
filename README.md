@@ -1,4 +1,4 @@
-# Projektet CV-sida i React
+# Projekt: CV-sida i React
 En enkel CV-sida som skapats med hjälp av React, TypeScript, CSS och Aos.
 
 ## Skapad med hjälp av:
